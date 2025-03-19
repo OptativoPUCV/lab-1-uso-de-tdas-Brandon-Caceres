@@ -97,7 +97,7 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
-   Stack* pila_aux = create_list();
+   Stack* pila_aux = create_stack();
 
    while (top(P1) != -1){
       int num = top(P1);
