@@ -8,3 +8,26 @@ Wed, Mar 19, 2025  8:55:07 AM:
  tests:  2|3
 total_score: 20/70
 5e47cf1
+Wed, Mar 19, 2025  9:02:36 AM: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'eliminaElementos':
+exercises.c:82:16: error: implicit declaration of function 'firs' [-Werror=implicit-function-declaration]
+    int* dato = firs(L);
+                ^~~~
+exercises.c:82:16: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+exercises.c:84:16: error: comparison between pointer and integer [-Werror]
+       if (dato == elem){
+                ^~
+exercises.c:85:25: error: passing argument 2 of 'pushCurrent' makes pointer from integer without a cast [-Werror=int-conversion]
+          pushCurrent(L, *dato);
+                         ^
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:23:6: note: expected 'void *' but argument is of type 'int'
+ void pushCurrent(List *L, void *dato);
+      ^~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+894edbb
