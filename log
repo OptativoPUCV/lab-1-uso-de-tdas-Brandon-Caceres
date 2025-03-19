@@ -55,3 +55,14 @@ exercises.c:88:10: error: assignment makes integer from pointer without a cast [
 cc1.exe: all warnings being treated as errors
 Compilation failed
 efd589c
+Wed, Mar 19, 2025  9:09:33 AM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'eliminaElementos':
+exercises.c:87:13: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+       *dato = next(L);
+             ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+346d3bb
