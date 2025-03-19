@@ -100,21 +100,19 @@ void copia_pila(Stack* P1, Stack* P2) {
    Stack* pila_aux = create_stack();
 
    while (top(P1) != -1){
-      int num = top(P1);
-      push(pila_aux, num);
+      int *num = top(P1);
+      push(pila_aux, *num);
       pop(P1);
    }
 
    while (top(pila_aux) != -1){
-      int num = top(pila_aux);
-      push(P1, num);
-      push(P2, num);
+      int *num = top(pila_aux);
+      push(P1, *num);
+      push(P2, *num);
       pop(pila_aux);
    }
 
    free(pila_aux);
-
-   return P2;
 }
 
 /*
