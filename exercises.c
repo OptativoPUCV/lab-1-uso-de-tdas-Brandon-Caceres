@@ -138,7 +138,7 @@ int parentesisBalanceados(char *cadena) {
    for (int i = 0; i < (largo / 2); i){
       char *dato1 = (char*)top(Pila);
       pop(Pila);
-      char *dato2 = cadena[i];
+      char dato2 = cadena[i];
 
       if (*dato1 == *dato2){
          i++;

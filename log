@@ -435,3 +435,17 @@ exercises.c:141:21: error: initialization makes pointer from integer without a c
 cc1.exe: all warnings being treated as errors
 Compilation failed
 6d68f35
+vi., 21 de mar. de 2025 20:15:35: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:138:4: error: statement with no effect [-Werror=unused-value]
+    for (int i = 0; i < (largo / 2); i){
+    ^~~
+exercises.c:143:21: error: invalid type argument of unary '*' (have 'int')
+       if (*dato1 == *dato2){
+                     ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+dd33b21
