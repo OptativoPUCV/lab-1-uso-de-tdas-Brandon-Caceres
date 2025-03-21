@@ -140,7 +140,7 @@ int parentesisBalanceados(char *cadena) {
       pop(Pila);
       char dato2 = cadena[i];
 
-      if (*dato1 == *dato2){
+      if (*dato1 == dato2){
          i++;
       } else {
          return 0;

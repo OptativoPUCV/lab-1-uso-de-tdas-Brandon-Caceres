@@ -449,3 +449,14 @@ exercises.c:143:21: error: invalid type argument of unary '*' (have 'int')
 cc1.exe: all warnings being treated as errors
 Compilation failed
 dd33b21
+vi., 21 de mar. de 2025 20:15:45: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:138:4: error: statement with no effect [-Werror=unused-value]
+    for (int i = 0; i < (largo / 2); i){
+    ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+80bd3d5
