@@ -726,3 +726,23 @@ exercises.c:139:19: error: void value not ignored as it ought to be
 cc1.exe: all warnings being treated as errors
 Compilation failed
 79232ec
+vi., 21 de mar. de 2025 20:56:03: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:130:18: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(pila, cadena[i]);
+                  ^~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'char'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+In file included from test.c:5:0:
+exercises.c:139:19: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+       char dato = top(pila);
+                   ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+63c1eab
