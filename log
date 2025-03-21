@@ -757,3 +757,9 @@ exercises.c:141:19: error: initialization makes integer from pointer without a c
 cc1.exe: all warnings being treated as errors
 Compilation failed
 3893f4c
+vi., 21 de mar. de 2025 20:59:27: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+15970f0
