@@ -410,3 +410,14 @@ mi., 19 de mar. de 2025 21:58:46:
  tests:  4|1
 total_score: 50/70
 4eef67a
+vi., 21 de mar. de 2025 20:13:14: 
+ exercises.c | 25 +++++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:138:4: error: statement with no effect [-Werror=unused-value]
+    for (size_t i = 0; i < (largo / 2); i){
+    ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+675f267
