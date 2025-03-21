@@ -127,7 +127,7 @@ int parentesisBalanceados(char *cadena) {
    int largo = 0;
 
    for (int i = 0; cadena[i] != '\0'; i++){
-      push(pila, cadena[i]);
+      push(pila, (void *)cadena[i]);
       largo++;
    }
 
