@@ -809,3 +809,9 @@ c:\mingw\include\stdlib.h:487:39: note: expected 'void *' but argument is of typ
 cc1.exe: all warnings being treated as errors
 Compilation failed
 c79b551
+vi., 21 de mar. de 2025 21:02:51: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  9|0
+total_score: 70/70
+45f7de2
