@@ -763,3 +763,34 @@ vi., 21 de mar. de 2025 20:59:27:
  tests:  4|1
 total_score: 50/70
 15970f0
+vi., 21 de mar. de 2025 21:01:09: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:144:15: error: passing argument 1 of 'free' makes pointer from integer without a cast [-Werror=int-conversion]
+          free(dato);
+               ^~~~
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:487:39: note: expected 'void *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void free (void *);
+                                       ^~~~
+In file included from test.c:5:0:
+exercises.c:148:15: error: passing argument 1 of 'free' makes pointer from integer without a cast [-Werror=int-conversion]
+          free(dato);
+               ^~~~
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:487:39: note: expected 'void *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void free (void *);
+                                       ^~~~
+In file included from test.c:5:0:
+exercises.c:152:15: error: passing argument 1 of 'free' makes pointer from integer without a cast [-Werror=int-conversion]
+          free(dato);
+               ^~~~
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:487:39: note: expected 'void *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void free (void *);
+                                       ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+9a8908c

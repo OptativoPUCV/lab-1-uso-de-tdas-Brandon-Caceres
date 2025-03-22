@@ -137,16 +137,19 @@ int parentesisBalanceados(char *cadena) {
       return 0;
    }
 
-   for (int i = 0; i <= (largo / 2); i++){
+   for (int i = 0; i < (largo / 2); i++){
       char dato = *(char *)top(pila);
       if (cadena[i] == '(' && dato == ')'){
          pop(pila);
+         free(dato);
       }
       else if (cadena[i] == '[' && dato == ']'){
          pop(pila);
+         free(dato);
       }
       else if (cadena[i] == '{' && dato == '}'){
          pop(pila);
+         free(dato);
       }
       else{
          return 0;
